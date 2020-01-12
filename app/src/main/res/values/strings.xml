@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EZ BUD</string>
+
+    <string name="menu_balance">Balance</string>
+    <string name="menu_budget">Budget</string>
+    <string name="menu_history">History</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
