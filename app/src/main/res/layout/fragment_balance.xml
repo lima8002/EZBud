@@ -3,16 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="1000dp"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context=".BalanceFragment">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="221dp"
+        android:layout_width="0dp"
         android:layout_height="24dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+
         android:text="Good morning,"
         android:textSize="18sp"
         app:autoSizeMinTextSize="28dp"
@@ -22,36 +23,29 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="351dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="25dp"
-        android:text="(second name)"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
         android:id="@+id/textView2"
-        android:layout_width="351dp"
+        android:layout_width="0dp"
         android:layout_height="30dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="16dp"
-        android:text="(first name)"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="(your name goes here)"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
         android:background="@drawable/round_corners_style_container"
+        android:minWidth="300dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintWidth_min="300dp">
 
         <TextView
             android:id="@+id/textView4"
@@ -72,5 +66,17 @@
             android:text="TextView" />
 
     </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_corners_style_container"
+        android:minWidth="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
