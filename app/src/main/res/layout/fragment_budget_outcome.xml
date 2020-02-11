@@ -7,7 +7,7 @@
     android:layout_margin="8dp"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context=".BudgetOutcomeFragment">
+    tools:context=".fragments.BudgetOutcomeFragment">
 
     <Button
         android:id="@+id/btnOutcome"
@@ -47,8 +47,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:alignmentMode="alignMargins"
-        android:background="@drawable/round_corners_style_container"
-
+        android:background="@drawable/round_corners_style_main"
         android:columnCount="3"
         android:rowCount="4"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -67,8 +66,8 @@
             android:layout_margin="10dp"
             android:background="@drawable/round_style_buttons"
             android:padding="10dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/baseline_school_black_24dp" />
 
         <ImageButton
             android:id="@+id/ib2"
@@ -80,11 +79,9 @@
             android:layout_columnWeight="1"
             android:layout_margin="10dp"
             android:background="@drawable/round_style_buttons"
-            android:maxWidth="25dp"
-            android:maxHeight="25dp"
             android:padding="10dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/baseline_local_grocery_store_black_24dp" />
 
         <ImageButton
             android:id="@+id/ib3"
@@ -97,8 +94,8 @@
             android:layout_margin="10dp"
             android:background="@drawable/round_style_buttons"
             android:padding="10dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/baseline_house_black_24dp" />
 
         <ImageButton
             android:id="@+id/ib4"
@@ -111,8 +108,8 @@
             android:layout_margin="10dp"
             android:background="@drawable/round_style_buttons"
             android:padding="10dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/baseline_call_black_24dp" />
 
         <ImageButton
             android:id="@+id/ib5"
@@ -125,8 +122,8 @@
             android:layout_margin="10dp"
             android:background="@drawable/round_style_buttons"
             android:padding="10dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/baseline_local_gas_station_black_24dp" />
 
         <ImageButton
             android:id="@+id/ib6"
@@ -139,8 +136,8 @@
             android:layout_margin="10dp"
             android:background="@drawable/round_style_buttons"
             android:padding="10dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/baseline_directions_bus_black_24dp" />
 
 
         <ImageButton
@@ -154,8 +151,8 @@
             android:layout_margin="10dp"
             android:background="@drawable/round_style_buttons"
             android:padding="10dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/baseline_local_cafe_black_24dp" />
 
         <ImageButton
             android:id="@+id/ib8"
@@ -168,8 +165,8 @@
             android:layout_margin="10dp"
             android:background="@drawable/round_style_buttons"
             android:padding="10dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/baseline_restaurant_black_24dp" />
 
         <ImageButton
             android:id="@+id/ib9"
@@ -182,8 +179,8 @@
             android:layout_margin="10dp"
             android:background="@drawable/round_style_buttons"
             android:padding="10dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/baseline_local_bar_black_24dp" />
 
         <ImageButton
             android:id="@+id/ib10"
@@ -196,8 +193,8 @@
             android:layout_margin="10dp"
             android:background="@drawable/round_style_buttons"
             android:padding="10dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/baseline_flight_black_24dp" />
 
         <ImageButton
             android:id="@+id/ib11"
@@ -210,8 +207,8 @@
             android:layout_margin="10dp"
             android:background="@drawable/round_style_buttons"
             android:padding="10dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/baseline_atm_black_24dp" />
 
         <ImageButton
             android:id="@+id/ib12"
@@ -224,8 +221,8 @@
             android:layout_margin="10dp"
             android:background="@drawable/round_style_buttons"
             android:padding="10dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/baseline_local_atm_black_24dp" />
 
     </GridLayout>
 

@@ -7,17 +7,19 @@ import androidx.fragment.app.Fragment;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+import eduardo6903.ezbud.entities.User;
+import eduardo6903.ezbud.fragments.*;
+//import eduardo6903.ezbud.fragments.BudgetOutcomeFragment;
+//import eduardo6903.ezbud.fragments.HistoryWeekFragment;
+//import eduardo6903.ezbud.fragments.SettingsFragment;
 
+public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
 
     @Override
@@ -51,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 fragment = new BudgetOutcomeFragment();
                 break;
             case R.id.action_history:
-                fragment = new HistoryWeekFragment();
+                fragment = new HistoryFragment();
                 break;
             case R.id.action_settings:
                 fragment = new SettingsFragment();
@@ -60,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         return loadFragment(fragment);
     }
 
-    private boolean loadFragment (Fragment fragment){
+    public boolean loadFragment (Fragment fragment){
         if (fragment != null ) {
             getSupportFragmentManager()
                     .beginTransaction()
